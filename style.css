@@ -11,20 +11,19 @@ p {
 .wrapper {
   max-width: 1430px;
   margin: auto;
-  background-color: #f8f5f5e4;
-  padding: 0 135px;
+  background-color: #f8f8f8;
+  padding: 0 135px 142px 0px;
 }
 .content {
   display: flex;
   max-width: 1160px;
   width: 100%;
-  margin: auto;
-  background-color: #e9e9e9;
+  margin: 0 auto;
+  background-color: #cecece;
   padding-bottom: 210px;
+  gap: 30px;
 }
-.watch {
-  position: relative;
-}
+
 .watch__text {
   width: 135px;
   display: block;
@@ -35,7 +34,6 @@ p {
 }
 .watch__title {
   display: block;
-  max-width: 877px;
   font-size: 250px;
   line-height: 230px;
   font-weight: 300;
@@ -43,7 +41,7 @@ p {
 }
 .watch__info {
   display: block;
-  max-width: 600px;
+  max-width: 575px;
   width: 100%;
   padding-top: 43px;
   font-size: 32px;
@@ -54,63 +52,52 @@ p {
 }
 
 .buy {
-  display: inline-block;
-  justify-content: center;
-  align-items: center;
-  min-width: 278px;
-  background-color: #161515;
-  padding: 25px 74px 35px 74px;
+  display: flex;
+  justify-content: start;
+  text-align: center;
   height: 82px;
-  border: 0px;
-  transition: 0.3s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 .buy:hover {
   background-color: #ffffff;
-  transition: 0.2s all ease-in-out;
 }
-
 .buy a {
   text-decoration: none;
   color: #ffffff;
   font-size: 32px;
   line-height: 29px;
   font-weight: 300;
+  max-width: 278px;
+  width: 100%;
+  padding: 25px 50px;
+  background-color: #161515;
   display: inline-block;
   transition: 0.3s all ease-in-out;
-}
-.buy a:hover {
-  color: #161515;
 }
 
-.price {
-  min-width: 143px;
-  display: inline-block;
-  height: 82px;
+.buy a:hover {
+  color: #161515;
   background-color: #ffffff;
-  padding: 13px 27px 31px 28px;
-  border: 0px;
-  transition: 0.3s all ease-in-out;
+  cursor: pointer;
 }
-.price:hover {
-  background-color: #161515;
-}
-.price a {
+.price {
+  display: inline-block;
+  background-color: #ffffff;
   color: #272727;
   font-size: 32px;
   line-height: 60px;
   font-weight: 300;
-  text-decoration: none;
+  padding: 13px 27px 31px 28px;
+  max-width: 143px;
   transition: 0.3s all ease-in-out;
 }
-.price a:hover {
-  color: #e9e9e9;
+.price:hover {
+  background-color: #161515;
+  color: #ffffff;
 }
 .photo {
   max-width: 408px;
   width: 100%;
-  position: absolute;
-  top: 0;
-  right: 240px;
 }
 .ptoto__image {
   max-width: 100%;
@@ -118,16 +105,17 @@ p {
   object-fit: cover;
 }
 .main {
-  /*display: flex;*/
-  margin: auto;
-}
-.main__text {
+  display: flex;
+  flex-direction: column;
   margin-inline: auto;
+}
+.main__title {
   font-size: 24px;
   line-height: 45px;
   text-align: center;
+  font-weight: 300;
 }
-.main__title {
+.main__subtitle {
   text-align: center;
   font-size: 72px;
   line-height: 81px;
@@ -135,94 +123,98 @@ p {
   margin-bottom: 84px;
   margin-top: 0;
 }
-.first-model {
+.main__picture1 {
+  display: flex;
   max-width: 417px;
   width: 100%;
-  background-color: #e9e9e9;
-  display: flex;
+  background-color: #cecece;
   margin-inline: auto;
   padding: 110px 60px 110px 70px;
 }
-.first-model img {
-  max-width: 100%;
+.main__picture1 img {
+  width: 100%;
   height: auto;
   object-fit: cover;
-  text-align: center;
-  justify-content: center;
 }
-.text1 {
+.main__picture1-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 531px;
   margin-inline: auto;
-  max-width: 600px;
-  width: 100%;
+  margin-top: 67px;
 }
-.text1__subtitle {
+.main__picture1-name {
   font-size: 32px;
   line-height: 29px;
   font-weight: 400;
   text-align: center;
-  padding-bottom: 17px;
-  margin-top: 67px;
 }
-.text1__first-model-info {
-  color: #161515;
-  font-weight: 300;
-  margin-inline: auto;
+.main__picture1-text {
   font-size: 32px;
   line-height: 50px;
-  margin-bottom: 85px;
+  font-weight: 300;
+  text-align: center;
 }
-.second-model {
+.main__picture2 {
+  display: flex;
   max-width: 496px;
   width: 100%;
-  background-color: #e9e9e9;
-  display: flex;
+  background-color: #cecece;
   margin-inline: auto;
   padding: 65px 2px;
-  margin-bottom: 67px;
+  margin-top: 85px;
 }
-.second-model img {
-  max-width: 100%;
+.main__picture2 img {
+  width: 100%;
   height: auto;
   object-fit: cover;
-  text-align: center;
-  justify-content: center;
 }
-.text2 {
+.main__picture2-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 510px;
   margin-inline: auto;
-  max-width: 600px;
-  width: 100%;
+  margin-top: 67px;
 }
-.text2__subtitle {
+.main__picture2-name {
   font-size: 32px;
   line-height: 29px;
   font-weight: 400;
   text-align: center;
-  padding-bottom: 17px;
-  margin-top: 67px;
 }
-.text2__second-model-info {
-  color: #161515;
-  font-weight: 300;
-  margin-inline: auto;
+.main__picture2-text {
   font-size: 32px;
   line-height: 50px;
-  margin-bottom: 60px;
+  font-weight: 300;
+  text-align: center;
 }
 .description {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  margin-top: 59px;
   max-width: 515px;
-  width: 100%;
   margin-inline: auto;
 }
 .description__title {
   font-size: 32px;
   line-height: 60px;
   text-align: center;
-  /*margin-bottom: 50px;*/
+  font-weight: 400;
 }
 .description__text {
   font-size: 24px;
   line-height: 41px;
   font-weight: 300;
+  text-align: center;
+}
+.description__text a {
+  text-decoration: none;
+  color: #bb8b5d;
+  transition: 0.3s all ease-in-out;
+}
+.description__text a:hover {
+  color: rgb(240, 114, 200);
 }
 .description__text::before {
   content: "";
@@ -233,12 +225,33 @@ p {
   margin-bottom: 50px;
   margin-inline: auto;
 }
-.description__text a {
-  color: #bb8b5d;
-}
-a:hover {
-  cursor: pointer;
-}
-.description__text a:visited {
-  color: red;
+@media (max-width: 992px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-inline: auto;
+    background-color: #cecece;
+    padding-bottom: 210px;
+    text-align: center;
+  }
+  .watch__title {
+    font-size: 150px;
+    text-align: center;
+  }
+  .watch__info {
+    justify-content: center;
+  }
+  .photo {
+    margin-inline: auto;
+  }
+  .watch {
+    word-break: break-word;
+  }
+  .watch {
+    order: 2;
+  }
+  .photo {
+    order: 1;
+  }
 }
