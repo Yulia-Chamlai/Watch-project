@@ -12,6 +12,10 @@ p {
   max-width: 1430px;
   margin: auto;
   background-color: #f8f8f8;
+<<<<<<< HEAD
+=======
+  padding: 0 135px 142px 0px;
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 }
 .content {
   display: flex;
@@ -56,9 +60,16 @@ p {
   text-align: center;
   height: 82px;
   transition: 0.2s all ease-in-out;
+<<<<<<< HEAD
 }
 .buy:hover {
 }
+=======
+}
+.buy:hover {
+  background-color: #ffffff;
+}
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 .buy a {
   text-decoration: none;
   color: #ffffff;
@@ -74,12 +85,22 @@ p {
 }
 
 .buy a:hover {
+<<<<<<< HEAD
   cursor: pointer;
   transform: translateY(-10px);
 }
 .price {
   display: inline-block;
   background-color: #ffffff;
+=======
+  color: #161515;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.price {
+  display: inline-block;
+  background-color: #ffffff;
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
   color: #272727;
   font-size: 32px;
   line-height: 60px;
@@ -89,15 +110,23 @@ p {
   transition: 0.3s all ease-in-out;
 }
 .price:hover {
+<<<<<<< HEAD
   transform: translateY(-10px);
+=======
+  background-color: #161515;
+  color: #ffffff;
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 }
 .photo {
   max-width: 408px;
   width: 100%;
+<<<<<<< HEAD
   transition: 0.3s all ease-in-out;
 }
 .photo:hover {
   transform: scale(1.2);
+=======
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 }
 .ptoto__image {
   max-width: 100%;
@@ -132,9 +161,12 @@ p {
   padding: 110px 60px 110px 70px;
   transition: 0.3s all ease-in-out;
 }
+<<<<<<< HEAD
 .main__picture1:hover {
   transform: scale(1.2);
 }
+=======
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 .main__picture1 img {
   width: 100%;
   height: auto;
@@ -167,11 +199,15 @@ p {
   margin-inline: auto;
   padding: 65px 2px;
   margin-top: 85px;
+<<<<<<< HEAD
   transition: 0.3s all ease-in-out;
 }
 .main__picture2:hover {
   transform: scale(1.2);
 }
+=======
+}
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 .main__picture2 img {
   width: 100%;
   height: auto;
@@ -234,9 +270,12 @@ p {
   margin-inline: auto;
   transition: 0.3s all ease-in-out;
 }
+<<<<<<< HEAD
 .description__text:hover:before {
   background-color: #bb8b5d;
 }
+=======
+>>>>>>> e37d7b768f658f0e0b865bf7782d26c46ef91760
 @media (max-width: 992px) {
   .content {
     display: flex;
